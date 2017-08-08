@@ -1,0 +1,5 @@
+<ul>
+  <%= for category <- @mail_categories do %>
+    <li><%= link category.name, to: mail_category_path(@conn, :show, category) %></li>
+  <% end %>
+</ul>

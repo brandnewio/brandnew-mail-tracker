@@ -1,0 +1,7 @@
+<h2><%= @mail_category.name %></h2>
+<ul>
+  <li>Sent count: <%= @sent_count %></li>
+  <li>Open rate: <%= @open_rate %></li>
+  <li>Click rate: <%= @click_rate %></li>
+</ul>
+<%= link "Back", to: mail_category_path(@conn, :index) %>
